@@ -1,0 +1,28 @@
+package minisql.lexer;
+
+public enum TokenType {
+
+    //keywords
+    CREATE,TABLE,INSERT,INTO,VALUES,
+    SELECT,FROM,WHERE,UPDATE,SET,DELETE,
+
+    //data types
+    INT,FLOAT,CHAR,TEXT,BOOLEAN,PRIMARY,KEY,NOT,NULL,
+
+    //boolean literals
+    TRUE,FALSE,
+
+    //Identifiers and literals
+    IDENTIFIER,
+    INTEGER_LITERAL,FLOAT_LITERAL,STRING_LITERAL,
+
+    //Operators
+    PLUS,MINUS,MULTIPLY,DIVIDE,
+    EQUAL,NOT_EQUAL,LESS_THAN,LESS_THAN_EQUAL,GREATER_THAN,GREATER_THAN_EQUAL,
+
+    //Separators
+    LEFT_PAREN,RIGHT_PAREN,COMMA,SEMICOLON,DOT,
+
+    
+    EOF
+}
